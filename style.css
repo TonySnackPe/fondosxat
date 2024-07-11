@@ -1,0 +1,88 @@
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+.title1 {
+    margin-top: 1rem;
+    margin-left: 30rem;
+}
+
+.in {
+    margin-top: 1rem;
+    margin-left: 31rem;
+    width: 500px;
+    height: 25px;
+}
+
+.caja {
+    position: static;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1rem;
+    margin-left: 25rem;
+    margin-right: 24.5rem;
+    width: 728px; 
+    height: 486px;
+}
+
+.texto1 {
+    margin-top: 0;
+    margin-left: 30rem;
+}
+
+.texto2 {
+    margin-top: 0;
+    margin-left: 33rem;
+}
+
+.boton1 {
+    margin-left: 45rem;
+    background-color: #ffffff00;
+}
+
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --background-color-dark: #121212;
+    --text-color-dark: #ffffff;
+}
+
+.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+/* Firma */
+
+.container-boton {
+    background-color: #ffffff;
+    border: 1px solid #272727;
+    position: fixed;
+    z-index: 1;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 15px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton {
+    width: 80px;
+    transition: ease 1s;
+}
+
+@keyframes efecto {
+    0% {
+        box-shadow: 0 0 0 0 rgba(147, 181, 255, 0.85);
+    }
+    100% {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
